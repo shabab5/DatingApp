@@ -93,7 +93,7 @@
   }
   
   
-  .badge {
+  .badge1 {
     position: absolute;
     top: 0px;
     text-align: center;
@@ -245,4 +245,101 @@
 .blur-half{
   background-color: transparent;
   backdrop-filter: blur(20px);
+}
+
+
+
+
+
+
+
+/* notification.html css file */
+
+
+.notification-container {
+  position:fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 1050;
+  
+}
+
+.notification {
+  background-color: #4a1a66;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.notification h5 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.notification p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+.notification small {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #f1f1f1;
+}
+
+.notification.news {
+  background-color: #4a1a66;
+}
+
+.notification.success {
+  background-color: #4a1a66;
+}
+
+.notification.alert {
+  background-color: #4a1a66;
+}
+
+.notification.error {
+  background-color: #4a1a66;
+}
+
+.badge {
+  margin-right: 10px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.news{
+  font-size: smaller;
+  font-weight: 200;
+  
 }
